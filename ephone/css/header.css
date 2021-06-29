@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.navbar {
+    margin: 0 10%;
+}
+
+.nav-left {
+    display: inline-flex;
+    background-color: #cc0000;
+    padding: 10px 20px 5px 20px;
+    width: 40%;
+}
+
+.nav-left a {
+    text-decoration: none;
+}
+
+.nav-left a img {
+    width: 33px;
+    align-items: center;
+    border: none;
+    margin-right: 10px;
+}
+
+.nav-left a  {
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.btn-location {
+    font-size: 12px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.btn-location i {
+    margin-left: 5px;
+}
+
+.show-location {
+    display: none;
+}
+
+.show-location ul {
+    list-style: none;
+}
+
+.show-location ul li {
+    margin-bottom: 20px;
+}
+
+.show-location ul li a i {
+    margin-right: 5px;
+}
+
+.show-location ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+}
+
+.show-location ul li a:hover {
+    background-color: #fff;
+    color: #000;  
+}
+
+.location:hover .show-location {
+    display: block;
+    position: absolute;
+    background-color: #cc0000;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    padding: 20px 20px 0 20px;
+}
+
+.txt-search {
+    width: 270px;
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+.btn-search {
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    margin-left: -5px;
+}
+
+.nav-right {
+    width: 60%;
+    float: right;
+}
+
+.nav-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-right ul a li {
+    text-align: center;
+    padding: 10px 15px 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-right ul li:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+.nav-right ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-right ul a li i {
+    font-size: 18px;
+}
+
+.nav-right ul a li span {
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .header{
+        width: 80%;
+    }
+    .nav-left{
+        display: inline-flex;
+        background-color: #cc0000;
+        padding: 10px 20px 5px 20px;
+        width: 45%;
+    }
+    .nav-right{
+        width: 55%;
+        float: right;
+    }
+}

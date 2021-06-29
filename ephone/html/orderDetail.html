@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../plugin/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css//hieu.css" />
+    <script src="../js/code.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+  <!-- Start header -->
+  <header>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#">
+                <img src="../images/logo1.png" alt="logo">
+            </a>
+            <div class="nav-search">
+                <div class="location">
+                    <button class="btn-location">Hà Nội<i class="fa fa-sort-desc"></i></button>
+                    <div class="show-location">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>Hà Nội</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>Hồ Chí Minh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="combo-search">
+                    <input class="txt-search" type="text" placeholder="Sản phẩm bạn cần tìm...">
+                    <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <a href="#">
+                    <li>
+                        <i class="fa fa-mobile"></i><br>
+                        <span>ĐIỆN THOẠI</span>
+                    </li>
+                </a>
+             
+                <a href="#">
+                    <li>
+                        <i class="fa fa-newspaper-o"></i><br>
+                        <span>TIN TỨC</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fa fa-address-card-o"></i><br>
+                        <span>LIÊN HỆ</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <i class="fa fa-shopping-bag"></i><br>
+                        <span>GIỎ HÀNG</span>
+                    </li>
+                </a>
+                <a href="signup.html">
+                    <li>
+                        <i class="fa fa-user"></i><br>
+                        <span>ĐĂNG NHẬP</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- End header -->
+    <div class="container">
+      <div class="row">
+        <div style="height: 50px;"></div>
+        <h4>Chi tiết đơn hàng đã đặt</h4>
+        <table class="table mt-15">
+          <thead>
+            <tr style="background-color: rgb(72, 78, 78); color: white;">
+              <th style="width: 20%;" scope="col">Tên sản phẩm</th>
+              <th style="width: 10%;" scope="col">Hình ảnh</th>
+              <th scope="col">Số lượng</th>
+              <th scope="col">Giá</th>
+              <th scope="col">Tổng sô tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <%= i.name %>
+              </td>
+              <td>
+                <img style="width: 50px;" src="/<%= i.images[0] %>" alt="" />
+              </td>
+              <td>
+                <span style="padding-left: 20px;">
+                  <%= j.count %>
+                </span>
+              </td>
+              <td>
+                <%= i.saleCost %>
+              </td>
+              <td>
+                <%= i.saleCost * j.count %>
+              </td>
+            </tr>
+            <tr>
+              <td style="background: #333; color: white;">
+                Tổng cộng :
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
+  <!-- Start Footer -->
+  <footer>
+    <div class="side-footer">
+      <div class="side-left-footer">
+        <div class="logo-footer">
+          <img src="../images/logo1.png" alt="logo" />
+        </div>
+        <p>Address: 60-49 Road 11378 New York</p>
+        <p>Phone: +65 11.188.888</p>
+        <p>Email: hello.colorlib@gmail.com</p>
+        <div class="social">
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-google" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side-right-footer">
+        <div class="infomation-footer">
+          <h2>Thông tin</h2>
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Chính sách & Bảo hành</a></li>
+          </ul>
+        </div>
+        <div class="join-footer">
+          <h2>Kết nối với chúng tôi</h2>
+          <p>
+            Hãy điền Email của bạn vào đây để có thể nhận nhiều ưu đãi mới nhé
+          </p>
+          <form action="">
+            <input type="text" name="" placeholder="Email của bạn..." required />
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="author">
+      Copyright &copy; 2020 | Trang web này được xây dựng bởi Ephone Group
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
